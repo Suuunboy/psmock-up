@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+/* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
 html, body {
     overflow-x: hidden;
     height: 100%;
@@ -7,7 +7,8 @@ body {
     background: #fff;
     padding: 0;
     margin: 0;
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 .header {
     display: block;
@@ -15,17 +16,20 @@ body {
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: #85CC8C;
+    background-color: #A1B8FB;
     position: fixed;
     height: 75px!important;
     overflow: hidden;
     z-index: 10;
     top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .header h1{
     color: white;
     margin-left: 10px;
+    
 }
 
 .main {
@@ -42,13 +46,7 @@ body {
     width: 100%;
     text-align: center;
 }
-/* .mainInner div{
-    display:table-cell;
-    vertical-align: middle;
-    font-size: 3em;
-    font-weight: bold;
-    letter-spacing: 1.25px;
-} */
+
 #sidebarMenu {
     height: 100%;
     position: fixed;
@@ -57,7 +55,7 @@ body {
     margin-top: 75px;
     transform: translateX(250px);
     transition: transform 250ms ease-in-out;
-    background: #8C85CC;
+    background: #B7A1FB;
     z-index: 10;
 }
 .sidebarMenuInner{
@@ -152,34 +150,21 @@ input[type=checkbox] {
     margin-top: 6px;
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-    /* transition: all 0.3s;
-    box-sizing: border-box;
-    opacity: 0; */
-
     height: 0;
     transition: height 0.3s, opacity 0.3s;
     opacity: 0;
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-    /* transition: all 0.3s;
-    box-sizing: border-box;
-    transform: rotate(135deg);
-    margin-top: 8px; */
-
     transform: rotate(135deg);
     margin-top: 18px;
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-    /* transition: all 0.3s;
-    box-sizing: border-box;
-    transform: rotate(-135deg);
-    margin-top: -9px; */
-
     transform: rotate(-135deg);
     margin-top: -9px;
 }
 
 .project-description {
+    color: #1a1a1a;
     position: relative;
     top: 50px;
     text-align: center;
@@ -191,28 +176,40 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.project-description h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.project-description p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.project-description button {
-    background-color: #8C85CC;
+.tile {
+    margin-top: 20px;
     color: white;
-    padding: 15px 30px;
-    font-size: 20px;
-    border: none;
+    flex-grow: 1; /* Занимать все доступное пространство в родительском контейнере */
+    background-color: #B7A1FB;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 20px;
+    margin-right: 20px; /* Расстояние между плитками */
 }
 
-.project-description button:hover {
-    background-color: #7899D4;
+.tile:last-child {
+    margin-right: 0; /* Убрать правый отступ для последней плитки */
+}
+
+.tile h2 {
+    margin-top: 0;
+}
+
+.tile p {
+    margin-bottom: 0;
+}
+
+.test-title {
+    margin-top: 100px;
+}
+
+.test-title h1 {
+    text-align: center;
 }
