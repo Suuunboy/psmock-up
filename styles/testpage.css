@@ -205,12 +205,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 .tile h2 {
     margin-top: 0;
-    font-size: 18px; /* Уменьшить размер заголовка для лучшего отображения на маленьких экранах */
+    font-size: 20px; /* Уменьшить размер заголовка для лучшего отображения на маленьких экранах */
 }
 
 .tile p {
     margin-bottom: 0;
-    font-size: 14px; /* Уменьшить размер текста для лучшего отображения на маленьких экранах */
+    font-size: 16px; /* Уменьшить размер текста для лучшего отображения на маленьких экранах */
 }
 
 
@@ -291,4 +291,73 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     font-size: 20px;
     margin-right: 8px;
   }
+
+  
+.menu-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    /* background-color: #333; */
+    border-radius: 50%;
+}
+
+.menu {
+    position: absolute; /* Изменяем на абсолютное позиционирование */
+    background-color: #A1B8FB;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    left: 20px; /* Позиционируем меню к левому краю */
+    width: 300px;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем небольшую тень */
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-icon {
+    /* Оставьте текущие стили */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    width: 90px;
+    height: 90px;
+}
+
+.menu-icon img {
+    width: 100%; /* Растягиваем изображение на всю ширину блока */
+    height: 100%; /* Растягиваем изображение на всю высоту блока */
+    border-radius: 50%; /* Если требуется, добавляем скругление углов, чтобы сохранить круглую форму */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.hidden {
+    display: none; /* Скрываем меню изначально */
+}
   

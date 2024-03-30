@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
 html, body {
     overflow-x: hidden;
     height: 100%;
@@ -7,7 +6,7 @@ body {
     background: #fff;
     padding: 0;
     margin: 0;
-    /* font-family: 'Varela Round', sans-serif; */
+
     font-family: 'Roboto', sans-serif;
 }
 .header {
@@ -58,6 +57,7 @@ body {
     background: #A1B8FB;
     z-index: 10;
 }
+
 .sidebarMenuInner{
     margin:0;
     padding:0;
@@ -163,7 +163,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin-top: -9px;
 }
 
-.project-description {
+.test-block {
     color: #474A51;
     position: relative;
     top: 50px;
@@ -176,18 +176,42 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.project-description h2 {
+
+
+.lit-title {
+    margin-top: 100px;
+}
+
+.lit-title h1 {
+    text-align: center;
+    color: #474A51;
+}
+
+.lit-description {
+    color: #474A51;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lit-description h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.project-description p {
+.lit-description p {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
-.project-description button {
+.lit-description button {
     background-color: #B7A1FB;
     color: white;
     padding: 15px 30px;
@@ -198,7 +222,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transition: background-color 0.3s ease;
 }
 
-.project-description button:hover {
+.lit-description button:hover {
     background-color: #7899D4;
 }
 
